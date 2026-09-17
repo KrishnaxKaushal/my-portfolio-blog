@@ -1,8 +1,16 @@
+import Link from "next/link";
+
 export default function Blog() {
   return (
     <main className="min-h-screen bg-black text-white px-6 py-12">
 
       <div className="max-w-5xl mx-auto">
+        <Link
+         href="/"
+        className="inline-block mb-8 text-blue-400 hover:text-blue-300"
+         >
+         ← Back to Portfolio
+        </Link>
 
         <h1 className="text-5xl font-bold mb-4">
           My Blog
@@ -25,9 +33,12 @@ export default function Blog() {
               and artificial intelligence as a BCA student.
             </p>
 
-            <button className="text-blue-400 hover:text-blue-300">
-              Read More →
-            </button>
+            <a
+            href="/blog/ai-ml-journey"
+            className="text-blue-400 hover:text-blue-300"
+            >
+             Read More →
+            </a>
 
           </article>
 

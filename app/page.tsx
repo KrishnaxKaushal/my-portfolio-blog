@@ -2,7 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen animated-bg text-white">
+
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+      <div className="absolute top-20 left-10 w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
+      <div className="absolute top-1/3 right-20 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-1/3 left-1/4 w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping"></div>
+       <div className="absolute bottom-20 right-1/3 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+      </div>
 
       {/* Navigation */}
       <nav className="flex justify-between items-center px-6 md:px-10 py-6 border-b border-gray-800">
@@ -15,6 +22,7 @@ export default function Home() {
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <a href="/blog">Blog</a>
         </div>
       </nav>
 
